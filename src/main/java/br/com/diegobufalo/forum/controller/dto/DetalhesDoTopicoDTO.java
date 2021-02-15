@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import br.com.diegobufalo.forum.modelo.Resposta;
 import br.com.diegobufalo.forum.modelo.StatusTopico;
 import br.com.diegobufalo.forum.modelo.Topico;
 

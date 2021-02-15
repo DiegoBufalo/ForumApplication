@@ -62,8 +62,13 @@ public class TopicosController {
 	@Transactional
 	@CacheEvict(value = "listaDeTopicos", allEntries = true)
 	public ResponseEntity<TopicoDTO> cadastrar(@RequestBody @Valid TopicoForm form, UriComponentsBuilder uriBuilder){
+		
+		
+		
 		Topico topico = form.converter(cursoRepository);
 		topicoRepository.save(topico);
+		
+		
 		
 		URI uri = uriBuilder.path("/topicos/{id}").buildAndExpand(topico.getId()).toUri();
 		return ResponseEntity.created(uri).body(new TopicoDTO(topico));

@@ -7,6 +7,7 @@ import javax.validation.constraints.Size;
 import br.com.diegobufalo.forum.modelo.Curso;
 import br.com.diegobufalo.forum.modelo.Topico;
 import br.com.diegobufalo.forum.repository.CursoRepository;
+import br.com.diegobufalo.forum.repository.UsuarioRepository;
 
 public class TopicoForm {
 	
